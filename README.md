@@ -30,7 +30,7 @@ Before we can attempt to dump the firmware, we'd need to try to figure out what 
 Connecting the SWD header to a J-LINK, setting up its parameters, and attempting to read the firmware, I was able to get a successful dump. Usually MCU's have code readout protection which prevents the downloading of flash contents, the manufacturer did not turn this feature on.
 
 # Firmware Reversing
-The firmware can now be thrown into IDA/Ghidra for analysis, using the strings within, around 70% of the firmware can be mapped back to the N32G43x SDK and example implementation found on github. From within the firmware, the second RF chip can be identified, they are using an [Si4463](https://www.silabs.com/wireless/proprietary/ezradiopro-sub-ghz-ics/device.si4463?tab=specs) Transceiver chip that supports the ISM band.
+The firmware can now be thrown into IDA/Ghidra for analysis, using the strings within, around 70% of the firmware can be mapped back to the N32G43x SDK and example implementation found on github. From within the firmware, the RF chip can be identified, they are using an [Si4463](https://www.silabs.com/wireless/proprietary/ezradiopro-sub-ghz-ics/device.si4463?tab=specs) Transceiver chip that supports the ISM band.
 
 <img src="./imgs/Firmware_IDA.png" alt="drawing" width="600"><br>
 The reversing of the firmware is left as an exercise for the user and will not be covered here.
