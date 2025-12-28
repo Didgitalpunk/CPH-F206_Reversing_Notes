@@ -47,7 +47,7 @@ When dealing with small value components like inductors and capacitors, a Nano-V
 <img src="./imgs/Component_Identification_2.jpg" alt="drawing" width="600"><br>
 
 # Parts Identification
-Identification of parts took a while as finding parts with the same name was challenging. Using a multimeter, a component tester, an oscilloscope, image searching and pouring over datasheets helped find most of the components.<br>
+Identification of parts took a while as finding parts with the same name was challenging. Using part numbers, a multimeter, a component tester, an oscilloscope, image searching and pouring over datasheets helped find most of the components.<br>
 
 <img src="./imgs/Deadbug.png" alt="drawing" width="600"><br>
 
@@ -99,7 +99,7 @@ After weeks of tracing and schematic drawing, PCB's are sent for fabrication. Wh
 Below is a size comparison of the original and recreated PCB.<br>
 <img src="./imgs/PCB_Size_Comparison.jpg" alt="drawing" width="400"><br>
 After soldering all the components, the original MCU was soldered on for testing. In the first attempt, the reader was not picking up any tags.<br>
-Going back to the drawing board, a few components had to be re-measured from another working reader and a few mistakes were identified. At his point an oscilloscope was used to debug the circuit using references from a functional reader. After fixing mis-typed components and much experimenting, the reader works!.<br>
+Going back to the drawing board, a few components had to be re-measured from another working reader and a few mistakes were identified. At this point an oscilloscope was used to debug the circuit using references from a functional reader. After fixing mis-typed components and much experimenting, the reader works!.<br>
 <img src="./imgs/PCB_Recreated.jpg" alt="drawing" width="400"><br>
 One area that needs to be studied more is the matching network and filter sections as the current PCB isn't as fast/sensitive enough at picking up tags vs the original reader.<br>
 In v0.2 of the schematic, additional capacitors were added to the 5V rail. Also fixed incorrectly measured value for some components.<br>
